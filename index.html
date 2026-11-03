@@ -28,6 +28,7 @@
 :root { --c-canvas: #121417; --c-surface: #1a1d22; --c-ink: #e9ecef; --c-ink-soft: #a9b0b8; --c-accent: #c5ced8; --c-accent-ink: #12161b; --c-accent-deep: #c5ced8; --f-display: "Piazzolla", "Georgia", "Times New Roman", serif; --f-text: "Manrope", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>/* karta */ .s-map{margin-top:24px;display:grid;gap:14px}.s-map h3{margin:0;font-size:1.15rem}.s-map__frame{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--hair);background:var(--tint);aspect-ratio:16/7}.s-map__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.s-map__actions{display:flex;flex-wrap:wrap;gap:10px}@media (max-width:640px){.s-map__frame{aspect-ratio:4/3}.s-map__actions .s-btn{flex:1 1 100%;text-align:center}}</style>
 </head>
 <body class="s-prod" id="top" data-wa="79120152535" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -134,6 +135,16 @@
         
       </div>
     </div>
+    <!-- karta -->
+    <div class="s-map">
+      <h3>Как проехать</h3>
+      <div class="s-map__frame"><iframe src="https://yandex.ru/map-widget/v1/?ll=53.219911%2C56.863618&z=16&pt=53.219911%2C56.863618%2Cpm2rdl" title="Карта: как проехать" loading="lazy" allowfullscreen></iframe></div>
+      <div class="s-map__actions">
+        <a class="s-btn s-btn--ghost" href="https://yandex.ru/maps/?rtext=~56.863618%2C53.219911&rtt=auto" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
+        <a class="s-btn s-btn--ghost" href="https://2gis.ru/izhevsk/firm/70000001041294016" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+      </div>
+    </div>
+    <!-- /karta -->
   </section>
 </main>
 <footer class="s-foot"><p>УютМебель · Ижевск</p><p>Кухни, шкафы и мягкая мебель на заказ в Ижевске</p></footer>
